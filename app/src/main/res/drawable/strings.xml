@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">trafficLight</string>
+    <string name="redText">Крассный</string>
+    <string name="yellowText">Желтый</string>
+    <string name="greenText">Зеленый</string>
+    <string name="automaticChangeOver">автоматическое переключение</string>
+    <string name="Exit">Выход</string>
+    <string name="Stop">Стоп</string>
+</resources>
