@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,17 +22,44 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onRedButtonClick(View view) {
+       red();
+    }
+    public void onYellowButtonClick(View view) {
+        yellow();
+    }
+    public void onGreenButtonClick(View view) {
+      green();
+    }
+
+
+    public void onAutomaticChangeOverButtonClick(View view) {
+        Toast.makeText(getApplicationContext(),
+                "Цвет будет менятся каждые десять секунд",
+                Toast.LENGTH_SHORT).show();
+
+        for (int i = 0; i>3;i++){
+
+        }
+    }
+
+    public void onStopButtonClick(View view) {
+    }
+
+    public void onExitButtonClick(View view) {
+        finish();
+    }
+
+    private void red(){
         mInfoTextView.setText(R.string.redText);
         mRelativeLayout.setBackgroundColor(getResources().getColor(R.color.readColor));
     }
-    public void onYellowButtonClick(View view) {
+    private void yellow(){
         mInfoTextView.setText(R.string.yellowText);
         mRelativeLayout.setBackgroundColor(getResources().getColor(R.color.yellowColor));
+
     }
-    public void onGreenButtonClick(View view) {
+    private void green(){
         mInfoTextView.setText(R.string.greenText);
         mRelativeLayout.setBackgroundColor(getResources().getColor(R.color.greenColor));
     }
-
-
 }

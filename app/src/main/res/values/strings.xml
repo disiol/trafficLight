@@ -6,4 +6,5 @@
     <string name="automaticChangeOver">автоматическое переключение</string>
     <string name="Exit">Выход</string>
     <string name="Stop">Стоп</string>
+    <string name="TimeOfChangeOfColor">Цвет будет менятся каждые десять секунд</string>
 </resources>

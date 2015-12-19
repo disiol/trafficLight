@@ -58,21 +58,24 @@
 
 
     <Button
-        android:id="@+id/automaticChangeOver"
+        android:id="@+id/automaticChangeOverButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/automaticChangeOver"
         android:layout_below="@+id/greenButton"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="onAutomaticChangeOverButtonClick" />
 
     <Button
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Stop"
         android:id="@+id/stopButton"
-        android:layout_below="@+id/automaticChangeOver"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/automaticChangeOverButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onStopButtonClick"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -82,6 +85,7 @@
         android:id="@+id/exitButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="35dp" />
+        android:layout_marginBottom="35dp"
+        android:onClick="onExitButtonClick"/>
 </RelativeLayout>
 
